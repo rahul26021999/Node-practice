@@ -40,16 +40,32 @@ const getUser = (name) => {
 
 };
 
-getMovie(1)
-    .then(movie => {
-        return getReview(movie.id);
-    })
-    .then(review => {
-        return getUser(review.reviewer);
-    })
-    .then(user => {
-        console.log(user);
-    })
-    .catch(err => {
-        console.log(err);
-    });
+// Promises in Javascript
+
+// getMovie(1)
+//     .then(movie => {
+//         return getReview(movie.id);
+//     })
+//     .then(review => {
+//         return getUser(review.reviewer);
+//     })
+//     .then(user => {
+//         console.log(user);
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
+
+// Async wait in Javascript
+(
+    async() => {
+        try {
+            const movie = await getMovie(1);
+            const review = await getReview(movie.id);
+            const user = await getUser(review.reviewer);
+            console.log(user);
+        } catch (err) {
+            console.log(err);
+        }
+    }
+)();

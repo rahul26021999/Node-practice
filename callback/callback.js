@@ -1,6 +1,6 @@
-const users = require('./users.json');
-const movies = require('./movies.json');
-const reviews = require('./reviews.json');
+const users = require('../json/users.json');
+const movies = require('../json/movies.json');
+const reviews = require('../json/reviews.json');
 
 const getMovie = (id, cb) => {
     setTimeout(() => {

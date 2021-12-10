@@ -1,0 +1,25 @@
+{
+  "name": "firstapp",
+  "version": "1.0.0",
+  "description": "This is my first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahul26021999/FirstNode.git"
+  },
+  "author": "Rahul Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahul26021999/FirstNode/issues"
+  },
+  "homepage": "https://github.com/rahul26021999/FirstNode#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

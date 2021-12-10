@@ -1,0 +1,43 @@
+// Install dependency in dev
+npm -i --save-dev express
+
+// Install dependency in prod
+npm -i --save express
+
+// Install dependency in prod
+npm -i express
+
+
+// Install a new package.json
+npm init
+
+// Update dependencies in package.json
+npm update
+
+// Install dependencies in package.json
+npm install
+
+// Install dependency globaly
+npm i -g express
+
+// List all the dependencies
+npm list
+
+// List only installed dependencies
+npm list --depth=0
+
+// Show meta data about dependencies
+npm view express
+
+
+// To Install specific version of dependency
+npm i express@4.0.0
+
+Here 4-> Major 
+0. Minor
+0. Bug fixes
+
+// To uninstall dependencies
+npm un express
+or 
+npm uninstall express
